@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+}
+.container{
+    width: 80vw;
+}
+#headerheading{
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+#headerpara{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem;
+    
+    
+}
+.card{
+    background-color: rgb(247, 239, 239);
+    border: 2px solid lightgray;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-rows: 1fr .5fr .5fr;
+
+    
+}
+.card img{
+    width: 100%;
+    height: fit-content;
+    border-radius: .35rem .35rem 0 0;
+    object-fit: cover;
+}
+.heading{
+    font-size: small;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 1rem;
+}
+.subheading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: smaller;
+    text-align: justify;
+}
+.para{
+    padding: 1rem;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.name{
+    display: flex;
+    align-items: center;
+}
+.para2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: .5rem;
+}
+.para3{
+    font-weight: bold;
+    font-size: .57rem;
+}
+.para4{
+    font-size: .6rem;
+}
+button{
+    font-size: .75rem;
+    padding: .35rem;
+    border-radius: .25rem;
+    border: 2px solid rgb(188, 176, 176);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(143, 136, 136);
+}
+.card:hover{
+    border: 2px solid rgb(92, 91, 91);
+    box-shadow: 1px 1px 10px 1px rgb(92, 91, 91);
+    transform: scale(1.02);
+    transition-duration: 400ms;
+
+}
+button:hover{
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 10px 1px rgb(130, 129, 129);
+    cursor: pointer;
+    transition-duration: 400ms;
+    border: 2px solid rgb(104, 103, 103);
+
+}
+
